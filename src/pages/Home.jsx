@@ -120,7 +120,7 @@ function Home() {
                 className="main-heading"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 1 }}
+                transition={{ duration: 1, delay: 2.4 }}
               >
                 THE RD GROUP OF <br /> <span>INDUSTRIES</span>
               </motion.h1>
@@ -130,20 +130,19 @@ function Home() {
                 className="subtitle"
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 1.8 }}
+                transition={{ duration: 1, delay: 2.8 }}
               >
                 Validate and claim your certificates
               </motion.p>
               {/* Search Box First */}
               <motion.div
                 className="search-box mt-3"
-                initial={{ opacity: 0, y: 80 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 80, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
                   type: "spring",
-                  stiffness: 120,
-                  damping: 12,
-                  duration: 0.8,
+                  stiffness: 400,
+                  damping: 10,
                   delay: 0.3,
                 }}
               >
